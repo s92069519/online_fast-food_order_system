@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bree+Serif&family=Lobster&family=Nunito&family=Nunito+Sans&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+:root{
+    --color1:#FCA14E;
+}
+.box{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCA14E;
+    font-family: 'Nunito', sans-serif;
+}
+.containor{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    overflow: hidden;
+}
+.side{
+    width:250px;
+    height: 100%;
+    border-radius: 10px 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.logo{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster',cursive;
+    border-radius: 10px;
+}
+
+.logoh{
+    color:black;
+    font-family: 'Lobster',cursive;
+  }
+  .logo2{
+    color: orangered;
+    font-family: 'Lobster',cursive;
+  }
+
+  .navbar{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .bar{
+    margin-top: 50px;
+    font-size: 1.2rem;
+  }
+  .bar ul li{
+    list-style: none;
+    padding:10px 25px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+  }
+.bar ul li:hover{
+    background-color:#FEF3F1;
+    border-right:3px solid #FD683E ;
+    
+}
+a{
+    text-decoration: none;
+    color: #252525;
+    font-weight: 600;
+}
+.bar a:hover{
+    color:  #FD683E;
+}
+.bar > ul >li > a > ion-icon{
+    padding-right:10px;
+}
+.view{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px;
+    position: relative;
+}
+.accont_bar{
+    width: 100%;
+    height:47px;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.bar_icon{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
+    
+}
+.icon1{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #FD683E;
+    cursor: pointer;
+    background-color: #FEF3F1;
+}
+.center-align{
+    width: 100%;
+    height:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.food_details{
+    width:600px;
+    height:300px;
+    margin-left: 80px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.i_name{
+    margin-left: 20px;
+   color:  #FD683E;
+}
+.add_form{
+    width: 500px;
+    height: 250px;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    text-align: center;
+    padding:10px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.burger_form{
+    bottom: 0;
+}
+.active-bu_form{
+    bottom: 0;
+}
+.add_form form{
+    text-align: left;
+}
+h3{
+    color: #FD683E;
+}
+.input-n{
+    position: absolute;
+    top: 50px;
+}
+.input-p{
+    position: absolute;
+    right: 10px;
+    top: 50px;
+}
+.input-i{
+    position: absolute;
+    top: 110px;
+    
+}
+.btn-add{
+    position: absolute;
+    top : 145px;
+    right: 150px;
+}
+.btn-veiw{
+    position: absolute;
+    top: 140px;
+    right: 10px;
+}
+.btnview{
+    background-color: #F44771;
+    color: #ffffff;
+    width: 300px;
+    padding: 6px 75px;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+}
+.clicked{
+    background-color: #001542;
+}
+#btnadd{
+    position: absolute;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    top: 65px;
+    right:0px;
+    width: 230px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: #FD683E;
+    color: #ffffff;
+    cursor: pointer;
+}
+#btnadd:active{
+    background-color: #252525;
+    color: white;
+}
+
+form input{
+    font-family: 'Nunito', sans-serif;
+    width: 220px;
+    margin-top: 5px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    
+}
+
+
+.select_food{
+    width: 200px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    align-items: center;
+    padding: 10px;
+    top: 80px;
+    left: 30px;
+  }
+
+  .SFbtn{
+    width: 200px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius:5px;
+    background-color: #9B80F5;
+    color: white;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+  }
+  .SFbtn:focus{
+    background-color: #001542;
+    color: white;
+  }
+
+/* _____________---------------___________*/
+.all_view_table{
+    width: 72%;
+    height: 92%;
+    overflow: hidden;
+    background-color: transparent;
+    margin-left: 280px;
+}
+.view_table{
+    width: 100%;
+    height: 100%;
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.row{
+    width: 90%;
+    height: 85%;
+    box-shadow: rgba(0, 0, 0, 0.207) 0px 1px 4px;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction:column;
+    padding: 15px;
+    overflow: scroll;
+    
+}
+.row::-webkit-scrollbar{
+    display: none;
+    
+}
+.item-v{
+    width: 100%;
+    height:120px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-bottom: 1px solid #252525;
+    
+}
+.li{
+    width: 130px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-img{
+    width: 90px;
+    height: 100px;
+    object-fit: cover;  
+  }
+  .food-name{
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .food-price{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Deletebtn{
+    border: none;
+    padding: 10px 20px;
+    background-color: #F44771;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    font-weight:600;
+    cursor: pointer;
+    
+  }
+
+  /*-- Dashboard desgin--*/
+
+  .welcome_name{
+    margin-left: 60px;
+    margin-top: 10px;
+  }
+  .counter{
+    margin-top: 10px;
+    width: 100%;
+    height: 110px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+  }
+  .count_cart{
+    width: 76%;
+    height: 100px;
+    background-color: transparent;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .count_customer{
+    width: 35%;
+    height: 100px;
+    background-color: transparent;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .c-1{
+    width: 200px;
+    height: 90px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .c-icon ion-icon{
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+    border-radius:15px;
+    color: #FD683E;
+    background-color: #FEF3F1;
+    margin-right: 20px;
+    
+  }
+
+  .c-p h3{
+    color: #000;
+  }
+
+.cutomer-v{
+    width: 700px;
+    height: 430px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 50px;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.row-u{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction:column;
+    box-sizing: border-box;
+}
+.row-u::-webkit-scrollbar{
+    display:none;  
+}
+.customer-i{
+    width:98%;
+    background-color: aliceblue;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    font-size:16px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.massage{
+    width: 350px;
+    height: 530px;
+    background-color: rgb(255, 255, 255);
+    position:absolute;
+    top:100px;
+    right:10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    overflow: scroll;
+    padding-left:3px;
+}
+
+.massage-v{
+    width: 96%;
+    height: 300px;
+    background-color: aliceblue;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    overflow: scroll;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.massage-v::-webkit-scrollbar{
+    display:none;  
+}
+.massage::-webkit-scrollbar{
+    display:none;  
+}
+.massage-v h3{
+    color: #001542;
+    font-size: 15px;
+}
+.massage-v span{
+    color: #252525;
+    padding-top: 15px;
+    
+}
+.massage-v p{
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.row-m{
+    display: flex;
+}
+.row-m h4{
+    padding-left: 10px;
+}
+
+.order-sv{
+    width: 80%;
+    height: 430px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: absolute;
+    left: 50px;
+    top:220px;
+    overflow: hidden;
+  }
+ 
+
+.order-sv h2{
+    margin-left: 20px;
+}
+.status-colum{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    overflow: scroll;
+}
+.status-colum::-webkit-scrollbar{
+    display: none;
+}
+.status-colum .s-row{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 20px;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.i-s{
+    font-size: 30px;
+    cursor: pointer;
+}
+.s-img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+}
